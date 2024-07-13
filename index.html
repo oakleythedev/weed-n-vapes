@@ -11,13 +11,12 @@
     <style>
         body {
             font-family: 'Freckle Face', cursive;
-            background-color: #121212;
+            background: url('background.png') #1a1a1a;
+            background-size: cover;
             color: #f8f8f8;
             margin: 0;
             padding: 0;
             text-align: center;
-            background-image: url('background.png');
-            background-color: #1a1a1a;
         }
 
         header {
@@ -154,6 +153,18 @@
             background: rgba(0, 0, 0, 0.8);
             z-index: 999;
             display: none;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .container {
+                max-width: 90%;
+                margin: 0 auto;
+                padding: 20px;
+            }
         }
     </style>
 </head>
